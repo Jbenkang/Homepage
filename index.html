@@ -11,7 +11,214 @@
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-ico" />
-    <title>Jimin Kang  </title>
+    <title>Jimin Kang | Bioinformatician & Sensor Engineer</title>
+
+    <!-- Google Fonts for a fancier look -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,300,700|Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Fancybox for image popups -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+    <!-- Particle.js background -->
+    <style>
+        #particles-js {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            top: 0;
+            left: 0;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .fancy-header {
+            font-family: 'Montserrat', 'Arial', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 0 4px 24px rgba(0,0,0,0.3);
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .fancy-subtitle {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
+            color: #ffb347;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .about-sh-content {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            background: rgba(255,255,255,0.07);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+        }
+        .about-sh-image img {
+            border-radius: 50%;
+            border: 6px solid #fff;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .about-sh-image img:hover {
+            transform: scale(1.07) rotate(-2deg);
+            box-shadow: 0 8px 48px #ff512f55;
+        }
+        .vc_progress_bar .vc_single_bar {
+            margin-bottom: 1.2rem;
+            background: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px #0002;
+        }
+        .vc_progress_bar .vc_bar {
+            display: block;
+            height: 18px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+            transition: width 1.2s cubic-bezier(.77,0,.18,1);
+        }
+        .vc_label {
+            font-weight: 700;
+            color: #fff;
+            padding-left: 8px;
+        }
+        .vc_label_units {
+            float: right;
+            color: #ffb347;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        .vc_socials ul.socials-sh {
+            display: flex;
+            gap: 1.2rem;
+            justify-content: flex-start;
+            margin-top: 1.2rem;
+        }
+        .vc_socials ul.socials-sh li a {
+            font-size: 2rem;
+            color: #fff;
+            background: linear-gradient(135deg, #ff512f 0%, #dd2476 100%);
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s, color 0.3s, transform 0.2s;
+            box-shadow: 0 2px 12px #ff512f33;
+        }
+        .vc_socials ul.socials-sh li a:hover {
+            color: #fff;
+            background: linear-gradient(135deg, #dd2476 0%, #ff512f 100%);
+            transform: scale(1.12) rotate(-8deg);
+        }
+        .cwi-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .cwi-single {
+            background: rgba(255,255,255,0.06);
+            border-radius: 12px;
+            padding: 1.2rem 2rem;
+            min-width: 220px;
+            box-shadow: 0 2px 12px #0002;
+            text-align: center;
+            transition: box-shadow 0.3s, transform 0.2s;
+        }
+        .cwi-single:hover {
+            box-shadow: 0 8px 32px #ff512f33;
+            transform: translateY(-6px) scale(1.04);
+        }
+        .cwi-icon-wrapper {
+            font-size: 2.2rem;
+            color: #ffb347;
+            margin-bottom: 0.5rem;
+        }
+        .cwi-title {
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.3rem;
+        }
+        .cwi-content {
+            color: #eee;
+            font-size: 1rem;
+        }
+        .footer {
+            background: linear-gradient(90deg, #232526 0%, #414345 100%);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            margin-top: 3rem;
+            box-shadow: 0 -2px 16px #0002;
+        }
+        .menu-wrapper {
+            background: rgba(34,34,34,0.92);
+            border-radius: 0 0 18px 18px;
+            box-shadow: 0 2px 16px #0002;
+            padding: 0.5rem 2rem;
+        }
+        .sf-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .sf-menu li a {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .sf-menu li a:hover, .sf-menu .current-menu-item a {
+            background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+            color: #fff;
+        }
+        .overlay.overlay-slidedown {
+            background: rgba(34,34,34,0.96);
+        }
+        .popup-search-wrapper input[type="text"] {
+            border-radius: 8px;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            font-size: 1.1rem;
+            width: 260px;
+            background: #fff;
+            color: #232526;
+            box-shadow: 0 2px 8px #0002;
+        }
+        @media (max-width: 900px) {
+            .fancy-header { font-size: 2.2rem; }
+            .about-sh-image img { width: 140px; height: 140px; }
+            .cwi-wrapper { flex-direction: column; gap: 1rem; }
+        }
+    </style>
 
     <link rel='stylesheet' href='css/settings.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/animsition.css' type='text/css' media='all' />
@@ -26,11 +233,14 @@
     <link rel='stylesheet' href='css/js_composer.min.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/custom_script.css' type='text/css' media='all' />
 
-
 </head>
 
 <body
     class="home page page-id-7 page-parent page-template page-template-template-one-pager page-template-template-one-pager-php wpb-js-composer js-comp-ver-4.12 vc_responsive">
+
+    <!-- Particle.js background -->
+    <div id="particles-js"></div>
+
     <div class="overlay overlay-slidedown">
         <div class="fa overlay-close fa-close"></div>
         <div class="popup-search-wrapper">
@@ -49,12 +259,11 @@
             </section>
 
             <div id="header" class="wrapper-special">
-                <div class="logo">
+                <div class="logo" style="text-align:center; margin-top:1.5rem;">
                     <a href="index.html" title="JiminKang.Info">
-                        <!-- <img class="logoImage" src="images/logo.png"
-                            alt="Hire Me" /><img class="logoImageRetina" src="images/logo-retina.png"
-                            alt="Hire Me" /> -->
-                        </a>
+                        <img class="logoImage animate__animated animate__fadeInDown" src="images/logo.png"
+                            alt="Jimin Kang Logo" style="height:60px;"/>
+                    </a>
                     <div class="clear"></div>
                 </div>
         
@@ -67,11 +276,8 @@
                                     <li
                                         class="menu-item current-menu-item page_item page-item-7 current_page_item menu-item-has-children">
                                         <a href="index.html">Home</a>
-
                                     </li>
-
                                     <li class="menu-item"><a href="projects.html">Projects</a></li>
-                                
                                 </ul>
                             </div>
                         </div>
@@ -90,11 +296,8 @@
                         <li
                             class="menu-item current-menu-item page_item page-item-7 current_page_item menu-item-has-children">
                             <a href="index.html">Home</a>
-                    
                         </li>
-                    
                         <li class="menu-item"><a href="projects.html">Projects</a></li>
-                    
                     </ul>
                 </div>
             </div>
@@ -107,37 +310,35 @@
                             <div class="inner-container">
                             </div>
                         </div>
-
                     </section>
-
 
                     <section id="about" class="other-page-item onepager_section_class">
                         <div id="post-9" class="post-9 page type-page status-publish hentry">
                             <div class="center">
-                                <div class="vc_row wpb_row vc_row-fluid">
+                                <div class="vc_row wpb_row vc_row-fluid animate__animated animate__fadeInUp" style="animation-delay:0.2s;">
                                     <div class="wpb_column vc_column_container vc_col-sm-8">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
-                                                <div class="wpb_content_element vc_hireme_about">
-                                                    <div class="about-sh-left">
-                                                        <div class="about-sh-title">Jimin Kang</div> <br>
-                                                        <div class="about-sh-subtitle">Bioinformatician,<br> Sensor Engineer </div>
+                                                <div class="wpb_content_element vc_hireme_about" style="display:flex;align-items:center;gap:2.5rem;">
+                                                    <div class="about-sh-left" style="flex:2;">
+                                                        <div class="fancy-header">Jimin Kang</div>
+                                                        <div class="fancy-subtitle">Bioinformatician &amp; Sensor Engineer</div>
                                                         <div class="about-sh-border"></div>
-                                                        <div class="about-sh-content"> Hi I'm Jimin Kang.  <br>
-                                                            Currently living in Baltimore, MD. <br>
-                                                            Welcome to my page.<br><br>
-                                                            Fun fact: "I went to Spain to learn Salsa dance."<br>
-                                                             <a href="./JiminKang_CV.pdf" target="_blank">Click here to open CV</a>.
-
+                                                        <div class="about-sh-content animate__animated animate__fadeInLeft" style="animation-delay:0.5s;">
+                                                            Hi, I'm <b>Jimin Kang</b>.<br>
+                                                            Currently living in <span style="color:#ffb347;">Baltimore, MD</span>.<br>
+                                                            Welcome to my page!<br><br>
+                                                            <span style="font-style:italic;color:#ffb347;">Fun fact:</span> "I went to Spain to learn Salsa dance."<br>
+                                                            <a href="./JiminKang_CV.pdf" target="_blank" style="color:#ff512f;font-weight:700;text-decoration:underline;">Click here to open CV</a>.
                                                         </div>
-
                                                     </div>
-                                                    <div class="about-sh-right about-sh-image"><img
-                                                            src="images/jiminkang.jpg" alt="Jimin Kang" />
+                                                    <div class="about-sh-right about-sh-image animate__animated animate__zoomIn" style="flex:1;">
+                                                        <a data-fancybox="profile" href="images/jiminkang.jpg">
+                                                            <img src="images/jiminkang.jpg" alt="Jimin Kang" />
+                                                        </a>
                                                         <div class="about-sh-line-start"></div>
                                                         <div class="about-sh-line-end"></div>
                                                     </div>
-                                                    <div class="clear"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,38 +349,37 @@
                                                 <div class="vc_empty_space" id="div_8e37_0"><span
                                                         class="vc_empty_space_inner"></span></div>
                                                 <div
-                                                    class="vc_progress_bar wpb_content_element  vc_progress-bar-color-bar_grey">
-                                                    <div class="vc_general vc_single_bar"><small class="vc_label">Sensor
-                                                            Engineer<span class="vc_label_units">90%</span></small><span
-                                                            class="vc_bar " data-percentage-value="90"
-                                                            data-value="90"></span></div>
-                                                    <div class="vc_general vc_single_bar"><small
-                                                            class="vc_label">Biophysics <span
-                                                                class="vc_label_units">80%</span></small><span
-                                                            class="vc_bar " data-percentage-value="70"
-                                                            data-value="75"></span></div>
-                                                    <div class="vc_general vc_single_bar"><small
-                                                            class="vc_label">Python, C<span
-                                                                class="vc_label_units">80%</span></small><span
-                                                            class="vc_bar " data-percentage-value="80"
-                                                            data-value="80"></span></div>
-                                                    <div class="vc_general vc_single_bar"><small
-                                                            class="vc_label">Bioinformatics <span
-                                                                class="vc_label_units">70%</span></small><span
-                                                            class="vc_bar " data-percentage-value="60"
-                                                            data-value="70"></span></div>
+                                                    class="vc_progress_bar wpb_content_element  vc_progress-bar-color-bar_grey animate__animated animate__fadeInRight" style="animation-delay:0.7s;">
+                                                    <div class="vc_general vc_single_bar">
+                                                        <small class="vc_label">Sensor Engineer<span class="vc_label_units">90%</span></small>
+                                                        <span class="vc_bar" data-percentage-value="90" data-value="90" style="width:90%"></span>
+                                                    </div>
+                                                    <div class="vc_general vc_single_bar">
+                                                        <small class="vc_label">Biophysics <span class="vc_label_units">80%</span></small>
+                                                        <span class="vc_bar" data-percentage-value="80" data-value="80" style="width:80%"></span>
+                                                    </div>
+                                                    <div class="vc_general vc_single_bar">
+                                                        <small class="vc_label">Python, C<span class="vc_label_units">80%</span></small>
+                                                        <span class="vc_bar" data-percentage-value="80" data-value="80" style="width:80%"></span>
+                                                    </div>
+                                                    <div class="vc_general vc_single_bar">
+                                                        <small class="vc_label">Bioinformatics <span class="vc_label_units">70%</span></small>
+                                                        <span class="vc_bar" data-percentage-value="70" data-value="70" style="width:70%"></span>
+                                                    </div>
                                                 </div>
-                                                <div class="wpb_content_element vc_socials">
+                                                <div class="wpb_content_element vc_socials animate__animated animate__fadeInRight" style="animation-delay:1s;">
                                                     <ul class="socials-sh">
-                                                       
                                                         <li>
                                                             <a class="fa sh-socials-url fa-linkedin" href="https://www.linkedin.com/in/jkkorea/"
                                                                 title="LinkedIn" target="_blank" id="a_8e37_2"></a>
                                                         </li>
-                                                    
-                                                           <li>
+                                                        <li>
                                                             <a class="fa sh-socials-url fa-instagram" href="https://www.instagram.com/benedict.kang/"
-                                                                title="fa-instagram" target="_blank" id="a_8e37_3"></a>
+                                                                title="Instagram" target="_blank" id="a_8e37_3"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="fa sh-socials-url fa-github" href="https://github.com/jkkorea"
+                                                                title="GitHub" target="_blank"></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -188,44 +388,37 @@
                                     </div>
                                 </div>
                                 
-                                
                                 <br>
 
-                                <div class="vc_row wpb_row vc_row-fluid widther-box">
+                                <div class="vc_row wpb_row vc_row-fluid widther-box animate__animated animate__fadeInUp" style="animation-delay:1.2s;">
                                     <div class="wpb_column vc_column_container vc_col-sm-12">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="wpb_content_element vc_hireme_columnwithicon">
                                                     <div class="cwi-wrapper">
                                                         <div class="cwi-single">
-                                                            <div class="cwi-icon-wrapper"><span
-                                                                    class="cwi-icon flaticon-smartphone"></span></div>
+                                                            <div class="cwi-icon-wrapper"><span class="cwi-icon flaticon-smartphone"></span></div>
                                                             <div class="cwi-details">
                                                                 <div class="cwi-title">Phone number</div>
                                                                 <div class="cwi-content">
-                                                                    <br /> 
+                                                                    <span style="color:#ffb347;">Available on request</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="cwi-single odd-cwi-item">
-                                                            <div class="cwi-icon-wrapper"><span
-                                                                    class="cwi-icon flaticon-placeholder-3"></span>
+                                                            <div class="cwi-icon-wrapper"><span class="cwi-icon flaticon-placeholder-3"></span>
                                                             </div>
                                                             <div class="cwi-details">
                                                                 <div class="cwi-title">Address</div>
-                                                                <div class="cwi-content">21210, Baltimore, MD.
-                                                                    </div>
+                                                                <div class="cwi-content">21210, Baltimore, MD.</div>
                                                             </div>
                                                         </div>
                                                         <div class="cwi-single">
-                                                            <div class="cwi-icon-wrapper"><span
-                                                                    class="cwi-icon flaticon-paper-plane-1"></span>
+                                                            <div class="cwi-icon-wrapper"><span class="cwi-icon flaticon-paper-plane-1"></span>
                                                             </div>
                                                             <div class="cwi-details">
                                                                 <div class="cwi-title">Email Address</div>
-                                                                <div class="cwi-content">please contact via linkedin message
-                                                                
-                                                                </div>
+                                                                <div class="cwi-content">Please contact via <a href="https://www.linkedin.com/in/jkkorea/" target="_blank" style="color:#ff512f;text-decoration:underline;">LinkedIn message</a></div>
                                                             </div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -243,12 +436,54 @@
             <!-- end container-wrapper -->
             <div class="footer">
                 <div class="center">
-                    Jimin Kang 2022
+                    &copy; Jimin Kang <span id="year"></span> &mdash; <span style="color:#ffb347;">Bioinformatics & Sensor Engineering</span>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        // Particle.js config
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 60, "density": { "enable": true, "value_area": 900 } },
+                "color": { "value": ["#ff512f", "#dd2476", "#ffb347", "#fff"] },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.7, "random": true },
+                "size": { "value": 5, "random": true },
+                "line_linked": { "enable": true, "distance": 120, "color": "#fff", "opacity": 0.2, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" }
+                },
+                "modes": {
+                    "repulse": { "distance": 100, "duration": 0.4 },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+
+        // Animate progress bars on load
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.vc_bar').forEach(function(bar) {
+                var width = bar.getAttribute('data-value') || "0";
+                bar.style.width = "0";
+                setTimeout(function() {
+                    bar.style.width = width + "%";
+                }, 400);
+            });
+            // Set year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
 
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
@@ -552,7 +787,4 @@
 
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-
-
 </body>
-
